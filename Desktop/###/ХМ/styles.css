@@ -1,0 +1,257 @@
+
+@media screen and (max-width:580px){
+    .header__title {
+        font-size: 0.7em;
+    } 
+    
+    .header {
+        display: none;
+    }
+
+    .section {
+        height: 30vh;
+    }
+
+.section__content {
+    gap: 20px;
+    width: 100%;
+    font-size: 0.5em;
+}
+
+.tour-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.tour-card__description {
+font-size: 0.5em;
+}
+}
+
+@media screen and (max-width: 470px) {
+    .section__list {
+        font-size: 0.5em;
+    }
+
+    .section__button {
+        font-size: 0.6em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-width: 10%;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7ae7eb;
+    flex: 0 0 10%;
+    height: 100%;
+}
+
+.header__title {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav-link:hover {
+    color: #4f627e;
+}
+
+.header__nav-item {
+    margin-left: 25px;
+}
+
+.header__nav-link {
+    color: #ffffff;
+    font-size: 1em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__title {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section__content {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+}
+
+.section-1 {
+    background-image: url('image1.jpg');
+}
+
+.section-2 {
+    background-image: url('image2.jpg');
+}
+
+.section-3 {
+    background-image: url('image3.jpg');
+}
+
+
+.section__list {
+    list-style: none;
+    font-size: 0.7em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.section__button {
+    font-size: 0.7em;
+    padding: 20px 0;
+    width: 10em;
+    color: #ffffff;
+    background-color: #bc681a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.section__button:hover {
+    background-color: #a14f01;
+}
+
+.tour-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.tour-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(25% - 2rem);
+    margin: 0 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f0f2f5;
+    border-radius: 5px;
+
+}
+
+.tour-card__image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.tour-card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.tour-card__description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.tour-card__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tour-card__button {
+    font-size: 18px;
+    padding: 20px 0;
+    width: 108px;
+    color: #ffffff;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+   
+}
+
+.tour-card__button:hover {
+    background-color: rgb(10, 32, 61);
+}
+
+.tour-card__button-buy {
+    background-color: rgb(159, 193, 238);
+}
+
+.tour-card__button-info {
+    background-color: rgb(79, 101, 114);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34495e;
+    height: 60px;
+}
+
+.footer__text {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
